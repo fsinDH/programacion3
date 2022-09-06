@@ -1,0 +1,40 @@
+/* -------------HEADER------------- */
+.header{
+    background-color:rgba(135, 124, 172, 0.575);
+    padding: 1px ;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botones{
+    padding: 8px 50px;
+    margin: 0px;
+}
+
+.botones a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.logo{
+    width: 91px;
+    height: auto;
+}
+
+input{
+    border-radius: 5px;
+}
+
+.buscador{
+    padding: 8px 50px;
+    margin: 0px;
+}
+
