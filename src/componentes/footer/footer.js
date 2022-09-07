@@ -4,10 +4,10 @@ import "./footer.css"
 export default function Footer() {
     return(
         <div>
-            <h2>Conocenos!</h2>
-            <p>Roni Gottfried</p>
-            <p>Felipe Sin</p>
-            <p>Lucas Piwko</p>
+            <footer>
+                <h2>Conocenos!</h2>
+                <p>Roni Gottfried, Lucas Piwko y Felipe Sin</p>
+            </footer>
         </div>
     );
 }
