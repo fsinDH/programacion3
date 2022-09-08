@@ -1,8 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 /* -------------HEADER------------- */
 .header{
-    background-color:rgba(135, 124, 172, 0.575);
+    background-color:rgba(57, 12, 207, 0.824);
     padding: 1px ;
+    font-family: 'Roboto', sans-serif;
+    padding: 13px;
+    font-family: 'Poppins', sans-serif;
+
 }
+
+/* .logo {
+    text-decoration: none;
+     color: white;
+} */
+
+.logo{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: white;
+    width: 177px;
+    font-family: 'Poppins', sans-serif;
+    height: 51px;
+}
+
 
 .container{
     display: flex;
@@ -20,21 +46,74 @@
 .botones a{
     text-decoration: none;
     color: white;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-}
-
-.logo{
-    width: 91px;
-    height: auto;
 }
 
 input{
     border-radius: 5px;
 }
 
-.buscador{
+/* .buscador{
     padding: 8px 50px;
     margin: 0px;
-}
+} */
 
+
+.flexbox {
+    background: linear-gradient(rgba(57, 12, 207, 0.824));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search {
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .search > div {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search > div:after {
+    content: "";
+    background: white;
+    width: 4px;
+    height: 14px;
+    position: absolute;
+    top: 24px;
+    right: 0px;
+    transform: rotate(135deg);
+  }
+  
+  .search > div > form > input {
+    color: white;
+    font-size: 10px;
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border: solid 3px white;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+  }
+  
+  .search > div > form > input::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+  }
+  
+  .search > div > form > input:focus::placeholder {
+    opacity: 1;
+  }
+  
+  .search > div > form > input:focus,
+  .search > div > form > input:not(:placeholder-shown) {
+    width: 250px;
+  }
+  
+  

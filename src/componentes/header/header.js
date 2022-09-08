@@ -1,12 +1,13 @@
 import React from 'react';
 import "./header.css"
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet"></link>
 
 export default function Header() {
     return (
     <>
         <header className="header">
             <div className="container">
-                    <a><img className="logo" src="./logo.png" alt=" Views logo"></img></a>
+                    <h1 className='logo'>Cuevana 5</h1>
                     
                     <div class="botones">
                         <a href="App.js">Home</a>
@@ -17,16 +18,32 @@ export default function Header() {
                     </div>
 
                     <div class="botones">
-                        <a href="index.html">Ver Mas</a>
+                        <a href="index.html">Peliculas Populares</a>
                     </div>
 
-                    <div className="buscador">
+                    <div class="botones">
+                        <a href="index.html">Peliculas en Cartelera</a>
+                    </div>
+
+                    {/* <div className="buscador">
                         <form method="GET">
                                 <input className= "search" type="text" name="buscador" placeholder="Buscar.." value="" />
                                 <button type="submit">Enviar</button>
                         </form>
+                    </div> */}
+
+                    <div class="flexbox">
+                        <div class="search"> 
+                            <div>
+                                <form className='formBusqueda' method="GET">
+                                    <input type="text" placeholder="Search . . ." required/>
+                                </form>
+                            </div>
+                        </div>
                     </div>
+
             </div>
+
         </header>
     </>
     )
