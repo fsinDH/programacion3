@@ -6,27 +6,50 @@ class Home extends Component {
     constructor(props){
         super(props);
         this.state = {
-            peliculas : [],
+            peliculasPopulares : [],
+            peliculasCartelera : [],
         }
     }
-    componentDidMount(){
-const url = 'https://api.themoviedb.org/3/movie/popular?api_key=2a48645239a84bc2697fe8c66fc6dc00'
-        fetch(url)
-            .then( response => response.json() )
-            .then( data => {
-                console.log(data)
-                this.setState({peliculas: data.results})
-            })
-            .catch( error => console.log('El error fue: ' + error)) 
-    }
-   
+componentDidMount(){
+
+        const urlCartelera = 'https://api.themoviedb.org/3/movie/now_playing?api_key=2a48645239a84bc2697fe8c66fc6dc00'
+            fetch(urlCartelera)
+                .then( response => response.json() )
+                .then( data => {
+                    console.log(data)
+                    this.setState({peliculasCartelera: data.results.slice(0,5)})
+                })
+                .catch( error => console.log('El error fue: ' + error)) 
+        
+
+        const urlPopulares = 'https://api.themoviedb.org/3/movie/popular?api_key=2a48645239a84bc2697fe8c66fc6dc00'
+                fetch(urlPopulares)  
+                    .then( response => response.json() )
+                    .then( data => {
+                        console.log(data)
+                        this.setState({peliculasPopulares: data.results.slice(0,5)})
+                    })
+                    .catch( error => console.log('El error fue: ' + error))
+    }                
+
     render (){
         return(
             <div>
+                <h1>Peliculas en Cartelera</h1>
                 {
-                    this.state.peliculas.length == 0?
+                    this.state.peliculasCartelera.length == 0?
                     <p>Cargando</p>
-                    :this.state.peliculas.map(pelicula => (
+                    :this.state.peliculasCartelera.map(pelicula => (
+                    <Card
+                    pelicula = {pelicula}
+                    />
+                ))
+                }
+                <h1>Peliculas en Populares</h1>
+                {
+                    this.state.peliculasPopulares.length == 0?
+                    <p>Cargando</p>
+                    :this.state.peliculasPopulares.map(pelicula => (
                     <Card
                     pelicula = {pelicula}
                     />

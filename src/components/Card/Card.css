@@ -3,6 +3,7 @@
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
+   width: 25%;
   }
   
   .peliculas-card img {
@@ -10,3 +11,10 @@
     margin-bottom: 20px;
   }
   
+  .peliculas-card h4 {
+    width: 25%;
+  }
+
+  .peliculas-card p {
+    width: 25%;
+  }
