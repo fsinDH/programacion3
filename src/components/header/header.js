@@ -10,7 +10,7 @@ export default function Header() {
                     <h1 className='logo'>Cuevana 5</h1>
                     
                     <div class="botones">
-                        <a href="App.js">Home</a>
+                        <a href="/">Home</a>
                     </div>
 
                     <div class="botones">

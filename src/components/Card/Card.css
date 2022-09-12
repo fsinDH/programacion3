@@ -1,0 +1,12 @@
+.peliculas-card {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  }
+  
+  .peliculas-card img {
+    width: 230px;
+    margin-bottom: 20px;
+  }
+  
