@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route} from 'react-router-dom'
+import {Route, Switch, Link} from 'react-router-dom'
 
 import './App.css';
 import Header from './components/header/header';
@@ -14,11 +14,12 @@ function App() {
     <>
        <Header titulo="Cuevana 5" />
         {/* <Container /> */}
-        <>
+        <Switch>
           <Route path="/" exact={true} component={Home} /> 
           <Route path="/PeliculasPopulares" component={PeliculasPopulares}/>
           <Route path="/PeliculasEnCartelera" component={PeliculasEnCartelera}/>
-        </>
+        </Switch>
+        
       <Footer /> 
     </>
     );  
