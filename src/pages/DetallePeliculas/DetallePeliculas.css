@@ -1,0 +1,13 @@
+.card-detalle1-container {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    max-width: 50%;
+    background-color: black;
+}
+
+.card-detalle2-container img{
+    margin-bottom: 100px; 
+    width: 50vh
+}

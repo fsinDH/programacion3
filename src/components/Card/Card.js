@@ -7,6 +7,7 @@ export default class Card extends Component {
         this.state = {
             peliculasPopulares : [],
             peliculasCartelera : [],
+            DetallePeliculas : [],
             verMas: false,
         }
         console.log (this.props)
