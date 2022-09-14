@@ -1,20 +1,37 @@
 .peliculas-card {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
-   width: 25%;
+  flex-direction: column;
+  width: 231px;
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 2px;
+  color: #8da0bc;
   }
   
   .peliculas-card img {
     width: 230px;
     margin-bottom: 20px;
+    height: 76%;
+    border-radius: 16px;
+    margin: inherit;
   }
   
   .peliculas-card h4 {
-    width: 25%;
+    display: flex;
+    font-size: larger;
+    align-self: center;
+    margin: inherit;
   }
 
   .peliculas-card p {
-    width: 25%;
+    font-size: 85%;
+  }
+
+  .btn-info {
+    background-color: transparent;
+    border-image: none;
+    border-color: inherit;
+    border-style: inherit;
+    color: #8da0bc;
   }

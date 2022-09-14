@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+body {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    background: #1e2747;
+}
+
+.verTodas {
+    text-decoration: none;
+    display: flex;
+    color: #8da0bc;
+}
+
+.Carteleras {
+    text-decoration-style: none;
+    color: #8da0bc;
+}
+
+
+.catalogo {
+    display: flex;
+    justify-content: space-evenly;
+}

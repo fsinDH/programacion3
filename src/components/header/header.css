@@ -2,12 +2,10 @@
 
 /* -------------HEADER------------- */
 .header{
-    background-color:rgba(57, 12, 207, 0.824);
-    padding: 1px ;
     font-family: 'Roboto', sans-serif;
     padding: 13px;
     font-family: 'Poppins', sans-serif;
-
+    background: linear-gradient(to right, #000046, #1cb5e0);   
 }
 
 /* .logo {

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Card from '../../components/Card/Card'
 import {Link} from 'react-router-dom'
+import "./Home.css"
 
 class Home extends Component {
 
@@ -35,8 +36,9 @@ componentDidMount(){
 
     render (){
         return(
-            <div>
-                <h1>Peliculas en Cartelera</h1> <Link to='/PeliculasEnCartelera'>Ver Todas</Link>
+            <div className='peliculas'>
+                <h1 className='Carteleras'>Peliculas en Cartelera</h1> <Link className='verTodas' to='/PeliculasEnCartelera'>Ver Todas</Link>
+                <div className='catalogo'>
                 {
                     this.state.peliculasCartelera.length == 0?
                     <p>Cargando</p>
@@ -46,7 +48,10 @@ componentDidMount(){
                     />
                 ))
                 }
-                <h1>Peliculas en Populares</h1> <Link to='/PeliculasPopulares'>Ver Todas</Link>
+                </div>
+                
+                <h1 className='Carteleras'>Peliculas en Populares</h1> <Link className='verTodas' to='/PeliculasPopulares'>Ver Todas</Link>
+                <div className='catalogo'>
                 {
                     this.state.peliculasPopulares.length == 0?
                     <p>Cargando</p>
@@ -56,6 +61,7 @@ componentDidMount(){
                     />
                 ))
                 }
+                </div>
             </div>
         )
     }
