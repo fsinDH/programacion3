@@ -8,6 +8,7 @@ import Home from './pages/Home/Home';
 import PeliculasPopulares from './pages/PeliculasPopulares/PeliculasPopulares';
 import PeliculasEnCartelera from './pages/PeliculasEnCartelera/PeliculasEnCartelera';
 import NotFound from './pages/NotFound/NotFound'
+import Detallepeliculas from './pages/DetallePeliculas/DetallePeliculas'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/PeliculasPopulares" component={PeliculasPopulares}/>
           <Route path="/PeliculasEnCartelera" component={PeliculasEnCartelera}/>
           <Route path="/NotFound" component={NotFound}/>
+          <Route path="/Detallepeliculas" component={Detallepeliculas}/> 
         </Switch>
         
       <Footer /> 
