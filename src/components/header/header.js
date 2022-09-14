@@ -18,11 +18,11 @@ export default function Header() {
                     </div>
 
                     <div class="botones">
-                        <a href="index.html">Peliculas Populares</a>
+                        <a href="PeliculasPopulares">Peliculas Populares</a>
                     </div>
 
                     <div class="botones">
-                        <a href="index.html">Peliculas en Cartelera</a>
+                        <a href="PeliculasEnCartelera">Peliculas en Cartelera</a>
                     </div>
 
                     {/* <div className="buscador">

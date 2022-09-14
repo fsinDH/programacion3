@@ -15,6 +15,7 @@
     height: 76%;
     border-radius: 16px;
     margin: inherit;
+    height: auto;
   }
   
   .peliculas-card h4 {
@@ -26,6 +27,9 @@
 
   .peliculas-card p {
     font-size: 85%;
+    block-size: 0px;
+    margin-block: 5px;
+    margin-bottom: 138px;
   }
 
   .btn-info {

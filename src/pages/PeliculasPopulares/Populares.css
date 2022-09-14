@@ -1,0 +1,12 @@
+.titulo {
+    color: #8da0bc;
+    width: 303px;
+    margin-bottom: 10px;
+    margin-left: 68px;
+}
+
+.cartelera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

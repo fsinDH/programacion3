@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../../components/Card/Card'
+import "./Cartelera.css"
 
 
 export default class PeliculasEnCartelera extends Component {
@@ -24,7 +25,8 @@ export default class PeliculasEnCartelera extends Component {
   render() {
       return (
         <>
-            <h1>Peliculas en Cartelera</h1> 
+            <h1 className='titulo'>Peliculas en Cartelera</h1> 
+                <div className='cartelera'>
                 {
                     this.state.peliculasCartelera.length == 0?
                     <p>Cargando</p>
@@ -34,6 +36,7 @@ export default class PeliculasEnCartelera extends Component {
                     />
                     ))
                 }
+                </div>
             )
         </>
       )}
