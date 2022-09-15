@@ -9,6 +9,7 @@ import PeliculasPopulares from './pages/PeliculasPopulares/PeliculasPopulares';
 import PeliculasEnCartelera from './pages/PeliculasEnCartelera/PeliculasEnCartelera';
 import NotFound from './pages/NotFound/NotFound'
 import Detallepeliculas from './pages/DetallePeliculas/DetallePeliculas'
+import Favoritos from './pages/Favoritos/Favoritos';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/PeliculasEnCartelera" component={PeliculasEnCartelera}/>
           <Route path="/NotFound" component={NotFound}/>
           <Route path="/Detallepeliculas" component={Detallepeliculas}/> 
+          <Route path="/Favoritos" component={Favoritos}/>
         </Switch>
         
       <Footer /> 

@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './DetallePeliculas.css';
 
 export default class DetallePeliculas extends Component {
     constructor(props) {
