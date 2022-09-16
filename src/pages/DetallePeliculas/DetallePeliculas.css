@@ -1,14 +1,16 @@
-.card-detalle1-container {
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin-bottom: 15px;
-    max-width: 50%;
-    background-color: black;
-    color: #8da0bc;
+.card-detalle{
+    max-width: 80%;
+    display: flex;
+    align-content: center;
 }
 
-.card-detalle2-container img{
-    margin-bottom: 100px; 
-    width: 50vh
+.item-card-detail{
+    color: white;
+    font-size: 20px;
+}
+
+.item-card-detail2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }

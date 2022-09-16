@@ -37,7 +37,7 @@ componentDidMount(){
     render (){
         return(
             <div className='peliculas'>
-                <h1 className='Carteleras'>Peliculas en Cartelera</h1> <Link className='verTodas' to='/PeliculasEnCartelera'>Ver Todas</Link>
+                <h1 className='Carteleras'>Peliculas en Cartelera</h1> <Link className='verTodas' to='./PeliculasEnCartelera'>Ver Todas</Link>
                 <div className='catalogo'>
                 {
                     this.state.peliculasCartelera.length == 0?
@@ -50,7 +50,7 @@ componentDidMount(){
                 }
                 </div>
                 
-                <h1 className='Carteleras'>Peliculas en Populares</h1> <Link className='verTodas' to='/PeliculasPopulares'>Ver Todas</Link>
+                <h1 className='Carteleras'>Peliculas en Populares</h1> <Link className='verTodas' to='./PeliculasPopulares'>Ver Todas</Link>
                 <div className='catalogo'>
                 {
                     this.state.peliculasPopulares.length == 0?

@@ -27,12 +27,20 @@ export default class DetallePeliculas extends Component {
 
         return(
             <>
-                <img src={img + this.state.detalle.poster_path} alt={this.state.detalle.title}/>
-                <h1> {this.state.detalle.title} </h1>
-                <p> Calificacion: {this.state.detalle.vote_average} </p>
-                <p> Fecha de estreno: {this.state.detalle.release_date} </p>
-                <p> Duracion: {this.state.detalle.runtime} </p>
-                <p> Sinopsis: {this.state.detalle.overview} </p>
+            <div className="card-detalle">
+
+                <div className="item-card-detail2">
+                    <img src={img + this.state.detalle.poster_path} alt={this.state.detalle.title}/>
+                </div>
+
+                <div className= 'item-card-detail'>
+                    <h1> {this.state.detalle.title} </h1>
+                    <p> Calificacion: {this.state.detalle.vote_average} </p>
+                    <p> Fecha de estreno: {this.state.detalle.release_date} </p>
+                    <p> Duracion: {this.state.detalle.runtime} </p>
+                    <p> Sinopsis: {this.state.detalle.overview} </p>
+                </div>
+            </div>
             </>
         )
      }

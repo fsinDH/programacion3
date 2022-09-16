@@ -20,13 +20,13 @@ export default class Card extends Component {
     }
     render() {
     
-    let {poster_path, title, overview} = this.props.pelicula
+    let {poster_path, title, overview, id} = this.props.pelicula
     
     return (
         <>
         <div className="peliculas-card mb-4">
             
-            <Link to={`./DetallePeliculas/${this.props.pelicula.id}`}>
+            <Link to={`./DetallePeliculas/${id}`}>
             <img src={`https://image.tmdb.org/t/p/original${poster_path}`} alt={poster_path}/>
             </Link>
 
