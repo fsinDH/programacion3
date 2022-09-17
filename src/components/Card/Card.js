@@ -1,3 +1,4 @@
+import { toHaveFocus } from '@testing-library/jest-dom/dist/matchers';
 import React, {Component} from 'react'; 
 import {Link} from 'react-router-dom'
 import "./Card.css";
@@ -18,6 +19,10 @@ export default class Card extends Component {
     vermas = () => {
         this.setState({verMas: !this.state.verMas}) 
     }
+
+    vermenos = () => {
+        this.setState({verMas: this.state.verMas})
+    }
     render() {
     
     let {poster_path, title, overview, id} = this.props.pelicula
@@ -35,7 +40,10 @@ export default class Card extends Component {
             <h4>{title}</h4>
             {/* </Link> */}
 
-            <button className="btn btn-info" onClick={this.vermas}>Ver Mas</button>
+            <button className="btn btn-info" onClick={this.vermas}>
+                {this.state.verMas == true? <></> : "Ver Mas"}
+                {this.state.verMas == false? <></> : "Ver Menos"}
+            </button>
             {this.state.verMas == false? <></> :<p>{overview}</p> }
             <button>Favoritos</button>
             
