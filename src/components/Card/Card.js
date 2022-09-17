@@ -41,7 +41,7 @@ export default class Card extends Component {
             {/* </Link> */}
 
             <button className="btn btn-info" onClick={this.vermas}>
-                {this.state.verMas == true? <></> : "Ver Mas"}
+                {this.state.verMas == true? <></> : "Ver Más"}
                 {this.state.verMas == false? <></> : "Ver Menos"}
             </button>
             {this.state.verMas == false? <></> :<p>{overview}</p> }

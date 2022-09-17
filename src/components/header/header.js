@@ -54,15 +54,15 @@ export default class Header extends Component{
                     </div>
 
                     <div class="botones">
-                        <a href="favourite.html">Favoritos</a>
+                        <a href="/favourite.html">Favoritos</a>
                     </div>
 
                     <div class="botones">
-                        <a href="PeliculasPopulares">Peliculas Populares</a>
+                        <a href="/PeliculasPopulares">Peliculas Populares</a>
                     </div>
 
                     <div class="botones">
-                        <a href="PeliculasEnCartelera">Peliculas en Cartelera</a>
+                        <a href="/PeliculasEnCartelera">Peliculas en Cartelera</a>
                     </div>
 
                     {/* <div className="buscador">
