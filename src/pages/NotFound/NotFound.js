@@ -1,9 +1,11 @@
-function NotFound () {
+import React from 'react'
+import './NotFound.css'
+export const NotFound = () => {
     return (
-        <div>
-            <h2>Not Found</h2>
-        </div>
-    )
-}
+    <>
 
-export default NotFound;
+        <h1><span style={{color: 'white'}}>🙃 404 | No ha sido posible encontrar la pagina</span></h1>
+    
+</>
+)
+}

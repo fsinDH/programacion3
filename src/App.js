@@ -7,7 +7,7 @@ import Footer from './components/footer/footer';
 import Home from './pages/Home/Home';
 import PeliculasPopulares from './pages/PeliculasPopulares/PeliculasPopulares';
 import PeliculasEnCartelera from './pages/PeliculasEnCartelera/PeliculasEnCartelera';
-import NotFound from './pages/NotFound/NotFound'
+import { NotFound } from './pages/NotFound/NotFound'
 import Detallepeliculas from './pages/DetallePeliculas/DetallePeliculas'
 import Favoritos from './pages/Favoritos/Favoritos';
 
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" exact={true} component={Home} /> 
           <Route path="/PeliculasPopulares" component={PeliculasPopulares}/>
           <Route path="/PeliculasEnCartelera" component={PeliculasEnCartelera}/>
-          <Route path="/NotFound" component={NotFound}/>
+          <Route component={NotFound}/>
           <Route path="/Detallepeliculas/:id" component={Detallepeliculas}/> 
           <Route path="/Favoritos" component={Favoritos}/>
         </Switch>
