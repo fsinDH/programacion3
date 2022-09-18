@@ -19,10 +19,14 @@ function App() {
         {/* <Container /> */}
         <Switch>
           <Route path="/" exact={true} component={Home} /> 
+          <Route path="/Favoritos" component={Favoritos}/>
           <Route path="/PeliculasPopulares" component={PeliculasPopulares}/>
           <Route path="/PeliculasEnCartelera" component={PeliculasEnCartelera}/>
           <Route path="/DetallePeliculas/:id" component={DetallePeliculas}/>
           <Route path="/Favoritos" component={Favoritos}/>
+          
+          
+          
           <Route component={NotFound}/>
         </Switch>
         
