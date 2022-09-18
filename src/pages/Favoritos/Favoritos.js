@@ -43,17 +43,18 @@ export default class Favoritos extends Component {
                     
                     <h1>Favoritos</h1>
 
-                    {this.state.favoritos.length === 0  ? 
-                    
-                    <strong><h3>No tienes peliculas agregadas a favoritos</h3></strong>
-                    
-                    :
+                    {
+                        this.state.favoritos.length === 0  ? 
+                        
+                        <strong><h3>No tienes peliculas agregadas a favoritos</h3></strong>
+                        
+                        :
 
-                    <section className="cardContainer">
-                        {this.state.favoritos.map(pelicula => (
-                            <Card key={pelicula.id} peliculas={pelicula} favoritos={(fav) => this.handleFavoritos(fav)}/>
-                        ))}
-                    </section>
+                        <section className="cardContainer">
+                            {this.state.favoritos.map(pelicula => (
+                                <Card key={pelicula.id} pelicula={pelicula} favoritos={(fav) => this.handleFavoritos(fav)}/>
+                            ))}
+                        </section>
                     }
 
                 </div>
