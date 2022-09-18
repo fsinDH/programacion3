@@ -10,6 +10,7 @@ class Home extends Component {
         this.state = {
             peliculasPopulares : [],
             peliculasCartelera : [],
+            favoritos: [],
         }
     }
 componentDidMount(){
@@ -32,7 +33,21 @@ componentDidMount(){
                         this.setState({peliculasPopulares: data.results.slice(0,5)})
                     })
                     .catch( error => console.log('El error fue: ' + error))
-    }                
+    }   
+    handleFavoritos(card){
+        if (this.state.favoritos.some(fav => card.id === fav.id)) {
+            this.setState({favoritos: this.state.favoritos.filter(item => item.id !== card.id)}, () => {
+                localStorage.setItem("favoritos", JSON.stringify(this.state.favoritos))
+            })
+            console.log(this.state.favoritos.filter(item => item.id !== card.id))
+        } else {
+            this.setState({favoritos: [...this.state.favoritos, card]}, () => {
+                localStorage.setItem("favoritos", JSON.stringify(this.state.favoritos))
+            })
+        }
+    }
+    
+    
 
     render (){
         return(
@@ -44,7 +59,9 @@ componentDidMount(){
                     <p>Cargando</p>
                     :this.state.peliculasCartelera.map(pelicula => (
                     <Card
+                    key={pelicula.id}
                     pelicula = {pelicula}
+                    favoritos={(fav) => this.handleFavoritos(fav)}
                     />
                 ))
                 }
@@ -57,7 +74,9 @@ componentDidMount(){
                     <p>Cargando</p>
                     :this.state.peliculasPopulares.map(pelicula => (
                     <Card
+                    key={pelicula.id}
                     pelicula = {pelicula}
+                    favoritos={(fav) => this.handleFavoritos(fav)}
                     />
                 ))
                 }

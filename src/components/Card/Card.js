@@ -10,8 +10,7 @@ export default class Card extends Component {
             peliculasPopulares : [],
             peliculasCartelera : [],
             DetallePeliculas : [],
-            verMas: false,
-            favoritos: false,
+            verMas: false,     
         }
         console.log (this.props)
         
@@ -23,6 +22,11 @@ export default class Card extends Component {
     vermenos = () => {
         this.setState({verMas: this.state.verMas})
     }
+
+    handleFavoritos = () => {
+        this.setState({boton: !this.state.boton}, ()=>{this.props.favorito(this.props.pelicula)})
+    }
+
     render() {
     
     let {poster_path, title, overview, id} = this.props.pelicula
@@ -45,7 +49,9 @@ export default class Card extends Component {
                 {this.state.verMas === false? <></> : "Ver Menos"}
             </button>
             {this.state.verMas === false? <></> :<p>{overview}</p> }
-            <button>Favoritos</button>
+            
+            <button onClick={()=> this.handleFavoritos()}>{this.state.boton ? 'Quitar de Favoritos' : 'Agregar a Favoritos'}
+            </button>
             
         </div>
         </>
