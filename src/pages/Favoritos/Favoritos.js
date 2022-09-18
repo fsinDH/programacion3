@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../../components/Card/Card'
+import "./Favoritos.css"
 
 
 export default class Favoritos extends Component {
@@ -17,8 +18,6 @@ export default class Favoritos extends Component {
             favoritos: JSON.parse(localStorage.getItem("favoritos")) || [''],
             cargando: true
         })
-        
-        //console.log(this.state.leyenda)
     }
 
     handleFavoritos(card){

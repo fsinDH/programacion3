@@ -10,17 +10,14 @@ export default class Card extends Component {
             peliculasPopulares : [],
             peliculasCartelera : [],
             DetallePeliculas : [],
-            verMas: false,     
+            verMas: false, 
+            boton: false,    
         }
         console.log (this.props)
         
     }
     vermas = () => {
         this.setState({verMas: !this.state.verMas}) 
-    }
-
-    vermenos = () => {
-        this.setState({verMas: this.state.verMas})
     }
 
     handleFavoritos = () => {
