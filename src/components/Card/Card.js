@@ -24,7 +24,7 @@ export default class Card extends Component {
     }
 
     handleFavoritos = () => {
-        this.setState({boton: !this.state.boton}, ()=>{this.props.favorito(this.props.pelicula)})
+        this.setState({boton: !this.state.boton}, ()=>{this.props.favoritos(this.props.pelicula)})
     }
 
     render() {
