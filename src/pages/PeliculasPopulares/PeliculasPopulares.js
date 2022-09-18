@@ -27,7 +27,7 @@ export default class PeliculasPopulares extends Component {
             <h1 className='titulo'>Peliculas Populares</h1> 
                 <div className='cartelera'>
                 {
-                    this.state.peliculasPopulares.length == 0?
+                    this.state.peliculasPopulares.length === 0?
                     <p>Cargando</p>
                     :this.state.peliculasPopulares.map(pelicula => (
                     <Card

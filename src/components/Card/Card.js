@@ -1,4 +1,4 @@
-import { toHaveFocus } from '@testing-library/jest-dom/dist/matchers';
+/* import { toHaveFocus } from '@testing-library/jest-dom/dist/matchers'; */
 import React, {Component} from 'react'; 
 import {Link} from 'react-router-dom'
 import "./Card.css";
@@ -41,10 +41,10 @@ export default class Card extends Component {
             {/* </Link> */}
 
             <button className="btn btn-info" onClick={this.vermas}>
-                {this.state.verMas == true? <></> : "Ver Más"}
-                {this.state.verMas == false? <></> : "Ver Menos"}
+                {this.state.verMas === true? <></> : "Ver Más"}
+                {this.state.verMas === false? <></> : "Ver Menos"}
             </button>
-            {this.state.verMas == false? <></> :<p>{overview}</p> }
+            {this.state.verMas === false? <></> :<p>{overview}</p> }
             <button>Favoritos</button>
             
         </div>
